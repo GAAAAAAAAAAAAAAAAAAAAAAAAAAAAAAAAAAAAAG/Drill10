@@ -156,7 +156,7 @@ class StateMachine:
 
 class Boy:
     def __init__(self):
-        self.x, self.y = 400, 90
+        self.x, self.y = 400, 60
         self.frame = 0
         self.action = 3
         self.dir = 0
@@ -176,7 +176,7 @@ class Boy:
 
     def fire_ball(self):
         ball = Ball(self.x, self.y, self.face_dir*10)
-        game_world.add_object(ball, 1)
+        game_world.add_object(ball, 0)
         if self.face_dir == -1:
             print('Fire Ball to Left')
         elif self.face_dir == 1:
